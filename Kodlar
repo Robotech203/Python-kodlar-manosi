@@ -1,0 +1,265 @@
+# Python-kodlar-manosi
+🔸 Matn bilan ishlash (Text Processing)
+
+print() – ekranga matn chiqaradi
+
+input() – foydalanuvchidan matn/sanoq oladi
+
+.upper() – matnni katta harfga o‘giradi
+
+.lower() – matnni kichik harfga o‘giradi
+
+.title() – har bir so‘z bosh harf bilan
+
+.strip() – bo‘sh joylarni olib tashlaydi
+
+len() – uzunlikni hisoblaydi
+
+.replace() – matndagi belgilarni almashtiradi
+
+split() – matnni ro‘yxatga bo‘ladi
+
+' '.join() – ro‘yxatni matnga birlashtiradi
+
+
+
+---
+
+🔸 Sonlar va matematik amallar
+
++, -, *, /, **, % – arifmetik amallar
+
+abs(x) – sonning modulini oladi
+
+round(x) – yaxlitlaydi
+
+pow(x, y) – x ning y-darajasi
+
+math.sqrt(x) – ildiz chiqaradi
+
+math.floor(x) – pastga yaxlitlash
+
+math.ceil(x) – tepaga yaxlitlash
+
+math.pi – π soni
+
+random.randint(a, b) – tasodifiy butun son
+
+
+
+---
+
+🔸 Takrorlash (Looplar)
+
+for i in range(5): – 0 dan 4 gacha takrorlash
+
+while shart: – shart to‘g‘ri bo‘lsa, davom etadi
+
+break – siklni to‘xtatadi
+
+continue – keyingi aylanishga o‘tadi
+
+enumerate() – ro‘yxat indekslari bilan yuradi
+
+
+
+---
+
+🔸 Shartli tekshiruv (If-Else)
+
+if shart: – agar shart to‘g‘ri bo‘lsa
+
+elif boshqa_shart: – aks holda boshqa shart
+
+else: – qolgan holatlar
+
+==, !=, <, >, <=, >= – solishtirish
+
+and, or, not – mantiqiy operatorlar
+
+
+
+---
+
+🔸 Ro‘yxatlar (List) va Lug‘atlar (Dict)
+
+list = [1, 2, 3] – ro‘yxat
+
+list.append(4) – element qo‘shish
+
+list.pop() – oxirgi elementni olib tashlash
+
+list.sort() – tartiblash
+
+list[0] – birinchi element
+
+dict = {"ism": "Ali", "yosh": 15} – lug‘at
+
+dict["ism"] – qiymat olish
+
+dict["yangi"] = "qiymat" – yangi element qo‘shish
+
+dict.keys() / dict.values() – kalitlar / qiymatlar
+
+
+
+---
+
+🔸 Funksiya va modullar
+
+def nomi(): – funksiya yaratish
+
+return – qiymat qaytarish
+
+import modul – modul chaqirish
+
+from modul import narsa – moduldan faqat narsa olish
+
+lambda – qisqa funksiya
+
+help(modul) – yordam olish
+
+
+
+---
+
+🔸 Fayl bilan ishlash
+
+open("fayl.txt", "r") – o‘qish uchun ochish
+
+open("fayl.txt", "w") – yozish uchun ochish
+
+read(), readline(), readlines() – o‘qish usullari
+
+write() – faylga yozish
+
+with open(...) as f: – avtomatik yopiladigan usul
+
+
+
+---
+
+🔸 Xatolarni ushlash (Try-Except)
+
+try: – sinab ko‘rish
+
+except: – xatoni ushlash
+
+finally: – har doim bajariladi
+
+raise – xatoni o‘zi chiqarish
+
+
+
+---
+
+🔸 Algoritmlar va amaliyotlar
+
+sorted(list) – yangi tartiblangan ro‘yxat
+
+sum(list) – ro‘yxatdagi sonlar yig‘indisi
+
+max(list), min(list) – eng katta/kichik qiymat
+
+list.count(x) – nechta marta uchraydi
+
+set() – takroriy elementlarni olib tashlash
+
+zip() – ro‘yxatlarni juftlashtirish
+
+
+
+---
+
+🔸 Ilg‘or ishlanmalar
+
+tkinter – grafik oynalar yaratish (GUI)
+
+pygame – o‘yin yaratish
+
+flask, django – web saytlar yaratish
+
+telebot, aiogram – Telegram botlar
+
+sqlite3, pandas – maʼlumotlar bazasi bilan ishlash
+
+os, sys – tizim bilan ishlash
+
+Muhammadamin va Doniyorbek Normurodov, [22.06.2025 19:34]
+🔹 Ro‘yxat (List) uchun qo‘shimcha metodlar
+
+list.insert(index, qiymat) – ro‘yxatga aynan shu joyga qo‘shadi
+
+list.remove(qiymat) – ro‘yxatdan birinchi mos qiymatni o‘chiradi
+
+list.extend([boshqa_ro‘yxat]) – boshqa ro‘yxat elementlarini qo‘shadi
+
+list.reverse() – ro‘yxatni teskari qiladi
+
+list.copy() – ro‘yxat nusxasini yaratadi
+
+del list[index] – berilgan indeksdagi elementni o‘chiradi
+
+list.clear() – ro‘yxatni butunlay bo‘shatadi
+
+
+
+---
+
+🔹 String (matn) uchun qo‘shimcha metodlar
+
+str.startswith("matn") – shu matn bilan boshlanadimi?
+
+str.endswith("matn") – shu bilan tugaydimi?
+
+str.find("so‘z") – so‘zni qayerdan boshlanishini qaytaradi
+
+str.count("harf") – harf/so‘z necha marta qatnashgan
+
+str.isdigit() – faqat raqamdan iboratmi?
+
+str.isalpha() – faqat harflardan iboratmi?
+
+
+
+---
+
+🔹 Fayllar bilan ishlashda foydali kodlar
+
+os.path.exists("fayl.txt") – fayl bor-yo‘qligini tekshirish
+
+os.remove("fayl.txt") – faylni o‘chirish
+
+os.listdir() – papkadagi fayllarni ro‘yxati
+
+os.mkdir("papka") – yangi papka yaratish
+
+
+
+---
+
+🔹 Sana va vaqt (datetime)
+
+from datetime import datetime
+
+datetime.now() – hozirgi sana va vaqt
+
+datetime.strptime("2025-06-22", "%Y-%m-%d") – matndan vaqt olish
+
+strftime() – sanani matn shaklida chiqarish
+
+
+
+---
+
+🔹 Random moduli qo‘shimcha imkoniyatlar
+
+random.choice(list) – ro‘yxatdan tasodifiy tanlaydi
+
+random.shuffle(list) – ro‘yxatni aralashtiradi
+
+random.uniform(a, b) – a va b orasida random kasr son
+
+
+
+---
